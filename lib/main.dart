@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'Pages/buttons.dart';
 import 'Pages/carddetails.dart';
+import 'Pages/transactionhistory.dart';
 
 void main() {
   runApp(const MyApp());
@@ -75,7 +76,9 @@ class HomePage extends StatelessWidget {
                     child: const Column(
                       children: [
                         SizedBox(height: 95),
-                        Buttons()
+                        Buttons(),
+                        SizedBox(height: 15),
+                        Transactionhistory(),
                         // TransactionList
                       ],
                     ),
@@ -86,6 +89,58 @@ class HomePage extends StatelessWidget {
                     right: 25,
                     child: CardDetails(),
                   ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.white,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: Column(
+                children: [
+                  Icon(Icons.home),
+                  Text("Home", style: TextStyle(fontSize: 10)),
+                ],
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Column(
+                children: [
+                  Icon(Icons.credit_card),
+                  Text("My Card", style: TextStyle(fontSize: 10)),
+                ],
+              ),
+            ),
+            FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: const Color.fromARGB(255, 16, 80, 98),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: const Icon(Icons.qr_code_scanner, color: Colors.white),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Column(
+                children: [
+                  Icon(Icons.bar_chart),
+                  Text("Statistcs", style: TextStyle(fontSize: 10)),
+                ],
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Column(
+                children: [
+                  Icon(Icons.person),
+                  Text("Profile", style: TextStyle(fontSize: 10)),
                 ],
               ),
             ),

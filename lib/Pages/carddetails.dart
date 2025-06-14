@@ -70,7 +70,7 @@ class CardDetails extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("MasterCard",style: TextStyle(color: const Color.fromARGB(255, 41, 208, 119), fontSize: 24),)
+                          Text("Visa",style: TextStyle(color: const Color.fromARGB(255, 41, 208, 119), fontSize: 24),)
                         ],
                       )
                     ],
